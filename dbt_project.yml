@@ -1,0 +1,11 @@
+name: fabric_dbtjob_repro
+version: 1.0.0
+config-version: 2
+profile: fabric_dbtjob_repro
+
+model-paths: ["models"]
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  fabric_dbtjob_repro:
+    +materialized: view
