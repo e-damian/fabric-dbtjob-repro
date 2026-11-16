@@ -1,0 +1,7 @@
+models:
+  - name: lpm
+    description: Short source paths, but its not_null test compiles to a path over 260 characters.
+    columns:
+      - name: cccccccccccccccccccccccccccccccccccccccccccccccc
+        data_tests:
+          - not_null
